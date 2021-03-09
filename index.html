@@ -33,22 +33,22 @@
       // lista di nomi e una lista di cognomi, Gatsby vuole
       // generare una falsa lista di invitati.
 
-      // var names = ['Michele', 'Fabio', 'Roberto'];
-      // var lastnames = ['Forghieri', 'Papagni', 'Marazzini'];
-      //
-      // var fullnames = [];
-      //
-      //
-      // for (var i = 0; i < names.length; i++) {
-      //   var rnd1 = Math.floor(Math.random() * 3);
-      //   var rnd2 = Math.floor(Math.random() * 3);
-      //   var newName = names[rnd1];
-      //   var newSurname = lastnames[rnd2];
-      //   fullnames.push(newName + " " + newSurname);
-      //   console.log(newName + " " + newSurname);
-      // }
-      //
-      // console.log(fullnames);
+      var names = ['Jhonn', 'Poul', 'George', "Ringo"];
+      var lastnames = ["Star", 'Lennon', 'Harrison', "Mcartney"];
+
+      var fullnames = [];
+
+
+      for (var i = 0; i < names.length; i++) {
+        var rnd1 = Math.floor(Math.random() * names.length);
+        var rnd2 = Math.floor(Math.random() * lastnames.length);
+        var newName = names[rnd1];
+        var newSurname = lastnames[rnd2];
+        fullnames.push(newName + " " + newSurname);
+        console.log(newName + " " + newSurname);
+      }
+
+      console.log(fullnames);
 
       // ------------------------------------------------------------------------
 
@@ -129,44 +129,44 @@
 
       //----------------------------------------------------------------------------
 
-      // Crea due tag div con due id diversi.
-      // Un div avrà il testo colorato di rosso mentre l'altro di verde.
-      // Partendo da un array di numeri, stampiamo nell'id rosso i numeri
-      // dispari e in verde i numeri pari.
-
-      // creo un array che raccoglie tutti i numeri generati randomly
-      var numeri = [];
-
-      // creo le variabili che raccogloieranno distintivamente i numeri dispari e quelli pari
-      var numeriPair = [];
-      var numeriOdds = [];
-
-      // creo il ciclo che genererà i numeri randomly che andranno ad essere raccolti nell'array "numeri"
-      for (var i = 0; i < 100; i++){
-
-        var rnd = Math.floor(Math.random() * 100) + 1;
-        numeri.push(rnd);
-
-      }
-
-      // spartisco i numeri contenuti contenuti in "numeri" e li racocolgo in "numeriOdds" o "numeriPair"
-      for (var i = 0; i < numeri.length; i++) {
-
-        if (numeri[i] % 2 == 0) {
-
-          numeriPair.push(numeri[i]);
-        } else {
-
-          numeriOdds.push(numeri[i]);
-        }
-      }
-
-      // stampo su monitor
-      document.getElementById("green").innerHTML = numeriPair;
-      document.getElementById("red").innerHTML = numeriOdds;
-
-      // stampo in console
-      console.log(numeri);
+      // // Crea due tag div con due id diversi.
+      // // Un div avrà il testo colorato di rosso mentre l'altro di verde.
+      // // Partendo da un array di numeri, stampiamo nell'id rosso i numeri
+      // // dispari e in verde i numeri pari.
+      //
+      // // creo un array che raccoglie tutti i numeri generati randomly
+      // var numeri = [];
+      //
+      // // creo le variabili che raccogloieranno distintivamente i numeri dispari e quelli pari
+      // var numeriPair = [];
+      // var numeriOdds = [];
+      //
+      // // creo il ciclo che genererà i numeri randomly che andranno ad essere raccolti nell'array "numeri"
+      // for (var i = 0; i < 100; i++){
+      //
+      //   var rnd = Math.floor(Math.random() * 100) + 1;
+      //   numeri.push(rnd);
+      //
+      // }
+      //
+      // // spartisco i numeri contenuti contenuti in "numeri" e li racocolgo in "numeriOdds" o "numeriPair"
+      // for (var i = 0; i < numeri.length; i++) {
+      //
+      //   if (numeri[i] % 2 == 0) {
+      //
+      //     numeriPair.push(numeri[i]);
+      //   } else {
+      //
+      //     numeriOdds.push(numeri[i]);
+      //   }
+      // }
+      //
+      // // stampo su monitor
+      // document.getElementById("green").innerHTML = numeriPair;
+      // document.getElementById("red").innerHTML = numeriOdds;
+      //
+      // // stampo in console
+      // console.log(numeri);
 
       //---------------------------------------------------------------------------
 
