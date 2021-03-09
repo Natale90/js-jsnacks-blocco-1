@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Esercizi</title>
+
+    <style media="screen">
+      #green{
+        color: green;
+      }
+
+      #red{
+        color:red;
+      }
+    </style>
+
+  </head>
+  <body>
+
+    <div id="green">
+
+    </div>
+
+    <div id="red">
+
+    </div>
+
+
+
+    <script type="text/javascript">
+
+      // Generatore di "nomi cognomi" casuali: prendendo una
+      // lista di nomi e una lista di cognomi, Gatsby vuole
+      // generare una falsa lista di invitati.
+
+      // var names = ['Michele', 'Fabio', 'Roberto'];
+      // var lastnames = ['Forghieri', 'Papagni', 'Marazzini'];
+      //
+      // var fullnames = [];
+      //
+      //
+      // for (var i = 0; i < names.length; i++) {
+      //   var rnd1 = Math.floor(Math.random() * 3);
+      //   var rnd2 = Math.floor(Math.random() * 3);
+      //   var newName = names[rnd1];
+      //   var newSurname = lastnames[rnd2];
+      //   fullnames.push(newName + " " + newSurname);
+      //   console.log(newName + " " + newSurname);
+      // }
+      //
+      // console.log(fullnames);
+
+      // ------------------------------------------------------------------------
+
+
+      //------------------------------------------------------------------------------
+
+      // Crea due array che hanno un numero di elementi diversi.
+      // Aggiungi elementi all'array che ha meno elementi fino a
+      // quando ne avrà tanti quanti l'altro.
+
+      // var arr1 = [1, 2, 3];
+      // var arr2 = [5, 4, 8, 1, 3, 9, 5];
+      //
+      //
+      // var lng1 = arr1.length;
+      // var lng2= arr2.length;
+      // if (arr1.length == arr2.length) {
+      //
+      //   console.log("sono uguali");
+      // } else if (arr1.length < arr2.length) {
+      //
+      //   var longArr =  arr2;
+      //   var shortArr = arr1;
+      // } else{ arr1.length > arr2.length
+      //
+      //   var longArr =  arr1;
+      //   var shortArr = arr2;
+      // }
+      //
+      // var diff = longArr.length - shortArr.length;
+      //
+      // for (var i = 0; i < diff; i++) {
+      //   var rnd = Math.floor(Math.random() * diff);
+      //   shortArr.push(rnd);
+      // }
+      // console.log(arr1, arr2);
+
+
+      //---------------------------------------------------------------------
+
+      // Generatore di "nomi cognomi" casuali: prendendo una
+      // lista di nomi e una lista di cognomi, Gatsby vuole
+      // generare una falsa lista di invitati.
+
+      // var names = ["Tina", "Johnn", "Mick", "Poul"];
+      // var lastNames = ["Turner", "Lennon", "Jagger", "Mcarney"];
+      //
+      // var fullnames = [];
+      //
+      //
+      //
+      // for (var i = 0; i < 5; i++) {
+      //
+      //   var namesRnd = names[Math.floor(Math.random() * names.length)];
+      //   var lastnamesRnd = lastNames[Math.floor(Math.random() * lastNames.length)];
+      //   fullnames.push(namesRnd  + " " + lastnamesRnd);
+      // }
+      //
+      // console.log(fullnames);
+
+      // ------------------------------------------------------------------------
+
+      // Chiedere all'utente un valore limite, poi richiedere all'utente una serie di valori
+      // finche' la somma non supera il valore limite e stampare i valori forniti dall'utente
+
+      // var valLimite = parseInt(prompt("Inserisci il valore limite"));
+      // var sequenza = [];
+      //
+      // var sum = 0;
+      //
+      // while (sum < valLimite) {
+      //   var valore = parseInt(prompt("Inserisci un valore"));
+      //   sequenza.push(valore);
+      //   sum += valore; // oppure sum = sum + valore;
+      // }
+      //
+      // console.log(sequenza, sum);
+
+      //----------------------------------------------------------------------------
+
+      // Crea due tag div con due id diversi.
+      // Un div avrà il testo colorato di rosso mentre l'altro di verde.
+      // Partendo da un array di numeri, stampiamo nell'id rosso i numeri
+      // dispari e in verde i numeri pari.
+
+      // creo un array che raccoglie tutti i numeri generati randomly
+      var numeri = [];
+
+      // creo le variabili che raccogloieranno distintivamente i numeri dispari e quelli pari
+      var numeriPair = [];
+      var numeriOdds = [];
+
+      // creo il ciclo che genererà i numeri randomly che andranno ad essere raccolti nell'array "numeri"
+      for (var i = 0; i < 100; i++){
+
+        var rnd = Math.floor(Math.random() * 100) + 1;
+        numeri.push(rnd);
+
+      }
+
+      // spartisco i numeri contenuti contenuti in "numeri" e li racocolgo in "numeriOdds" o "numeriPair"
+      for (var i = 0; i < numeri.length; i++) {
+
+        if (numeri[i] % 2 == 0) {
+
+          numeriPair.push(numeri[i]);
+        } else {
+
+          numeriOdds.push(numeri[i]);
+        }
+      }
+
+      // stampo su monitor
+      document.getElementById("green").innerHTML = numeriPair;
+      document.getElementById("red").innerHTML = numeriOdds;
+
+      // stampo in console
+      console.log(numeri);
+
+      //---------------------------------------------------------------------------
+
+
+
+    </script>
+  </body>
+</html>
