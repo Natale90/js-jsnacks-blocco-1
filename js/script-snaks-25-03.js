@@ -177,7 +177,7 @@ function esArraySplitter() {
     var indMin = 0;
     var indMax = 12;
     var splitted = splitter(indMin, indMax, arr);
-    // [ 4, 5, 6, 7, 8 ]
+    
 }
 
 function init(){
