@@ -58,8 +58,7 @@ function esercizio2(){
 
         'name': prompt("Please type your name"),
         'LastName': prompt("Please type your Lastname"),
-        'age': parseInt
-        (prompt("Please type your age")),
+        'age': parseInt(prompt("Please type your age")),
     }
     console.log(newStudent);
     classe.push(newStudent);
